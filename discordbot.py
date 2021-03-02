@@ -22,7 +22,7 @@ async def think(ctx):
     await ctx.send(':thinking:')
     
 @bot.event
-async def a(ctx);
+async def a(ctx):
     def main():
   loop = asyncio.get_event_loop()
   v = loop.run_until_complete(f(1))  # ループにコルーチンを渡す

@@ -22,7 +22,7 @@ async def think(ctx):
     await ctx.send(':thinking:')
     
 @bot.event
-if message.content == "join":
+if message.content == "/join":
     if message.author.voice is None:
         await message.channel.send("あなたはボイスチャンネルに接続していません。")
         return

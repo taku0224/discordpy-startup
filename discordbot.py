@@ -22,18 +22,9 @@ async def think(ctx):
     await ctx.send(':thinking:')
     
 @bot.event
-async def get_content(n):
-  print(f'start {n}')
-  await asyncio.sleep(random.randint(1, 5))  # レスポンスタイムが違うことをシミュレート
-  print(f'end {n}')
-  return n
-
-async def f(n):
-  tasks = (
-    asyncio.ensure_future(get_content('a')),
-    asyncio.ensure_future(get_content('b')),
-    asyncio.ensure_future(get_content('c')),
-  )
-  return n, await asyncio.gather(*tasks)
+async def a(ctx);
+    def main():
+  loop = asyncio.get_event_loop()
+  v = loop.run_until_complete(f(1))  # ループにコルーチンを渡す
 
 bot.run(token)

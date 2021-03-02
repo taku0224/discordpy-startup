@@ -25,6 +25,6 @@ async def think(ctx):
 async def a(ctx):
     def main():
   loop = asyncio.get_event_loop()
-  v = loop.run_until_complete(f(1))  # ループにコルーチンを渡す
+  v = loop.run_until_complete(f('1'))  # ループにコルーチンを渡す
 
 bot.run(token)

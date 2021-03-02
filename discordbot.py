@@ -16,6 +16,8 @@ async def on_command_error(ctx, error):
 @bot.command()
 async def hello(ctx):
     await ctx.send('こんにちは')
-
+@bot.command()
+async def think(ctx):
+    await ctx.send(':thinking:')
 
 bot.run(token)

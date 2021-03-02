@@ -21,10 +21,6 @@ async def hello(ctx):
 async def think(ctx):
     await ctx.send(':thinking:')
     
-@bot.command()
-async def a(ctx):
-    def main():
-  loop = asyncio.get_event_loop()
-  v = loop.run_until_complete(f('1'))  # ループにコルーチンを渡す
+
 
 bot.run(token)

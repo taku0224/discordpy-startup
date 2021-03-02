@@ -32,5 +32,4 @@ if message.content == "join":
     await message.channel.send("接続しました。")
     
 
-pip install discord.py[voice]
 bot.run(token)

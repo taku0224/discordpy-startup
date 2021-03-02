@@ -22,5 +22,5 @@ async def think(ctx):
     await ctx.send(':thinking:')
     
 
-
+pip install discord.py[voice]
 bot.run(token)

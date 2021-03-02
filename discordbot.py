@@ -8,7 +8,7 @@ token = os.environ['DISCORD_BOT_TOKEN']
 await client.change_presence(activity=discord.Game(name='Healts of Iron Ⅳ'))
 
 # or, for watching:
-activity = discord.Activity(name='my activity', type=discord.ActivityType.watching)
+activity = discord.Activity(name='Healts of Iron Ⅳ', type=discord.ActivityType.watching)
 await client.change_presence(activity=activity)
 
 @bot.event
